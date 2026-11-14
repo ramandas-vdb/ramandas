@@ -1,0 +1,72 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{background:#f1f5f9;color:#0A2342;}
+.navbar{background:#0A2342;padding:15px 20px;position:sticky;top:0;z-index:100;}
+.nav-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;}
+.logo{color:white;font-size:18px;}
+.logo span{color:#FF6B00;}
+.nav-links{display:flex;gap:20px;align-items:center;}
+.nav-links a{color:white;text-decoration:none;font-weight:600;}
+.hamburger{display:none;color:white;font-size:26px;cursor:pointer;}
+.btn-orange-small{background:#FF6B00;color:white !important;padding:8px 15px;border-radius:20px;}
+.page{display:none;max-width:1100px;margin:auto;padding:25px 15px;}
+.page.active{display:block;}
+.hero{background:linear-gradient(135deg,#0A2342,#1e4a7a);color:white;padding:50px 25px;border-radius:20px;text-align:center;}
+.hero-badge{background:rgba(255,255,255,0.15);padding:8px 15px;border-radius:20px;font-size:13px;}
+.hero h1{font-size:42px;margin:20px 0 15px;line-height:1.2;}
+.hero p{opacity:0.85;max-width:600px;margin:auto;}
+.orange{color:#FF6B00;}
+.hero-btns{margin-top:25px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-orange{background:#FF6B00;color:white;border:none;padding:13px 25px;border-radius:30px;font-weight:bold;cursor:pointer;font-size:15px;}
+.btn-white{background:white;color:#0A2342;border:none;padding:13px 25px;border-radius:30px;font-weight:bold;cursor:pointer;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:20px;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:15px;}
+.page-box{background:white;padding:30px;border-radius:18px;}
+.mock-card,.s-card{background:white;padding:25px;border-radius:16px;text-align:center;}
+.mock-card h2,.s-card h2{font-size:32px;color:#0A2342;}
+.tag{background:#FFF1E6;color:#FF6B00;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:bold;}
+.page-box h2{font-size:32px;margin:12px 0;}
+.timeline p{background:#f8fafc;padding:12px;border-radius:10px;margin:8px 0;border-left:4px solid #FF6B00;}
+form label{display:block;margin:15px 0 5px;font-weight:600;font-size:14px;}
+form input,form textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;font-size:15px;}
+footer{text-align:center;padding:25px;color:#64748b;font-size:14px;}
+
+/* ===== ANIMATION + TRANSPARENT GLASS BOX ===== */
+.page-box,.mock-card,.s-card{
+  background: rgba(255,255,255,0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,0.6);
+  box-shadow:0 15px 35px rgba(10,35,66,0.15) !important;
+  transition:all 0.4s ease;
+}
+.mock-card:hover,.s-card:hover{
+  transform:translateY(-8px) scale(1.02);
+  background:rgba(255,255,255,0.95) !important;
+  border-color:#FF6B00;
+  box-shadow:0 20px 40px rgba(255,107,0,0.25) !important;
+}
+.page.active{animation:pageAao 0.6s ease both;}
+@keyframes pageAao{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.card-anim{animation:cardAao 0.6s ease both;}
+@keyframes cardAao{from{opacity:0;transform:translateY(25px);}to{opacity:1;transform:translateY(0);}}
+.btn-orange{animation:chamak 2s infinite;}
+@keyframes chamak{0%,100%{box-shadow:0 0 0 0 rgba(255,107,0,0.4);}50%{box-shadow:0 0 0 10px rgba(255,107,0,0);}}
+.hero{animation:heroFloat 4s ease-in-out infinite;}
+@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+
+@media(max-width:768px){
+  .nav-links{display:none;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:#0A2342;padding:20px;}
+  .nav-links.show{display:flex;}
+  .hamburger{display:block;}
+  .stats-row,.grid{grid-template-columns:1fr 1fr;}
+  .hero h1{font-size:28px;}
+}
+@media(max-width:480px){.stats-row,.grid{grid-template-columns:1fr;}}
+.whatsapp-btn{
+  position:fixed; bottom:20px; right:20px;
+  background:#25D366; color:white;
+  width:55px; height:55px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:28px; text-decoration:none;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3); z-index:999;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raman Das - Reforms & Leadership</title>
+<link rel="stylesheet" href="reform.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">🇮🇳 <b>REFORM</b> <span>& LEADERSHIP</span></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('about')">About</a>
+      <a href="#" onclick="showPage('services')">Services</a>
+      <a href="#" onclick="showPage('impact')">Impact</a>
+      <a href="#" onclick="showPage('contact')" class="btn-orange-small">Book Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <span class="hero-badge">✦ Trusted Political Leadership & Reform Movement</span>
+    <h1>Empowering Change,<br>Building Tomorrow's <span class="orange">Leadership.</span></h1>
+    <p>From grassroots to governance — data-driven strategy, youth leadership, and transparent reforms for a stronger India.</p>
+    <div class="hero-btns">
+      <button class="btn-orange" onclick="showPage('contact')">Book Free Consultation →</button>
+      <button class="btn-white" onclick="showPage('about')">Explore Our Journey ↓</button>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="mock-card"><h2>500+</h2><p>Youth Leaders Trained</p></div>
+    <div class="mock-card"><h2>50+</h2><p>Successful Campaigns</p></div>
+    <div class="mock-card"><h2>120+</h2><p>Villages Reached</p></div>
+    <div class="mock-card"><h2>10+</h2><p>Years Experience</p></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="page-about" class="page">
+  <div class="page-box">
+    <span class="tag">About Raman Das</span>
+    <h2>The Journey of a <span class="orange">Reformer</span></h2>
+    <p>Raman Das is a political strategist and social reformer from Jhansi, dedicated to transparent leadership, youth empowerment and grassroots change.</p>
+    <h3 style="margin-top:20px;">Journey Timeline</h3>
+    <div class="timeline">
+      <p><b>2018 -</b> Started as Student Leader, College Union</p>
+      <p><b>2021 -</b> Founded Youth Reform Movement</p>
+      <p><b>2024 -</b> Led 50+ Campaigns & Booth Management</p>
+    </div>
+    <h3 style="margin-top:20px;">Our Vision</h3>
+    <p>✔ Transparent Governance &nbsp; ✔ Youth in Politics &nbsp; ✔ Digital India for Villages</p>
+    <button class="btn-orange" onclick="showPage('contact')" style="margin-top:15px;">Join The Movement →</button>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="page-services" class="page">
+  <div class="page-box" style="text-align:center;">
+    <span class="tag">What We Do</span>
+    <h2>Our <span class="orange">Services</span></h2>
+  </div>
+  <div class="grid">
+    <div class="s-card"><h3>🎯 Political Strategy</h3><p>Complete election strategy, voter analysis & winning roadmap.</p></div>
+    <div class="s-card"><h3>📊 Survey & Research</h3><p>Booth-level survey, ground report & public opinion.</p></div>
+    <div class="s-card"><h3>📱 Digital Campaign</h3><p>Social media, WhatsApp & content that wins trust.</p></div>
+    <div class="s-card"><h3>👦 Youth Leadership</h3><p>Training, mentorship & leadership for next generation.</p></div>
+    <div class="s-card"><h3>🗳️ Booth Management</h3><p>Booth team, voter list & polling day management.</p></div>
+    <div class="s-card"><h3>👤 Leader Positioning</h3><p>Image building, branding & public speaking training.</p></div>
+  </div>
+</div>
+
+<!-- IMPACT -->
+<div id="page-impact" class="page">
+  <div class="page-box" style="text-align:center;">
+    <span class="tag">Our Impact</span>
+    <h2>Real Change, <span class="orange">Real Results</span></h2>
+  </div>
+  <div class="grid">
+    <div class="s-card"><h2 class="orange">500+</h2><h3>Youth Leaders</h3><p>Trained across UP & MP.</p></div>
+    <div class="s-card"><h2 class="orange">50+</h2><h3>Campaigns Won</h3><p>Panchayat to Assembly level.</p></div>
+    <div class="s-card"><h2 class="orange">120+</h2><h3>Villages</h3><p>Reached with reform programs.</p></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="page-contact" class="page">
+  <div class="page-box">
+    <span class="tag">Book Free Consultation</span>
+    <h2>Let's Build <span class="orange">Change Together</span></h2>
+    <form id="consultForm">
+      <label>Full Name *</label>
+      <input type="text" id="fName" placeholder="Apna naam likho">
+      <label>Phone Number *</label>
+      <input type="tel" id="fPhone" placeholder="10-digit mobile number">
+      <label>Message</label>
+      <textarea id="fMsg" rows="3" placeholder="Kya help chahiye?"></textarea>
+      <p id="formError" style="color:red; font-size:14px;"></p>
+      <p id="formMsg" style="color:green; font-size:14px; font-weight:bold;"></p>
+      <button type="submit" class="btn-orange" style="width:100%;">Submit Request →</button>
+    </form>
+  </div>
+</div>
+
+<footer>© 2026 Raman Das - Reforms & Leadership | Jhansi, India</footer>
+<script src="reform.js"></script>
+<a href="https://wa.me/919309207324?text=Namaste%20Raman%20Das!%20Mujhe%20Free%20Consultation%20chahiye" target="_blank" class="whatsapp-btn">💬</a>
+</body>
+</html>
