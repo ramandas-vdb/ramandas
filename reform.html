@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raman Das — Political Strategy, Research & Leadership</title>
+  <link rel="stylesheet" href="reform.css">
+</head>
+<body>
+
+  <!-- TRANSPARENT HEADER -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" onclick="showPage('home')">
+        <span class="logo-badge">RD</span>
+        <div class="logo-text"><b>REFORM</b><span>& LEADERSHIP</span></div>
+      </a>
+
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="nav-item active-link" onclick="showPage('home', this)">HOME</a>
+        <a href="#" class="nav-item" onclick="showPage('insight', this)">INSIGHT</a>
+        <a href="#" class="nav-item" onclick="showPage('solution', this)">SOLUTION</a>
+        <a href="#" class="nav-item" onclick="showPage('team', this)">OUR TEAM</a>
+        <a href="#" class="nav-item" onclick="showPage('about', this)">ABOUT</a>
+        <a href="#" class="nav-item" onclick="showPage('blogs', this)">BLOGS</a>
+        <a href="#" class="btn-contact-pill" onclick="showPage('contact', this)">📞 Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HOME PAGE ==================== -->
+    <div id="page-home" class="page active">
+      <!-- Full-Screen Photographic Hero with Transparent Overlay -->
+      <section class="hero-main">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-wrap">
+          <span class="gold-pill">DATA-DRIVEN POLITICAL CONSULTING & REFORM STRATEGY</span>
+          <h1>Empowering Leadership.<br><span class="gold-text">Shaping Winning Narratives.</span></h1>
+          <p>From grassroots booth intelligence to digital war rooms and policy advisory — we deliver actionable political insights for decisive electoral success.</p>
+          <div class="hero-actions">
+            <button class="btn-gold" onclick="showPage('contact')">Work With Us</button>
+            <button class="btn-glass" onclick="showPage('insight')">Explore Insights</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overlapping 4 White Stat Cards -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">📈</div>
+              <h2>500+</h2>
+              <p>LEADERS MENTORED</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🗳️</div>
+              <h2>50+</h2>
+              <p>CAMPAIGNS EXECUTED</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🌐</div>
+              <h2>120+</h2>
+              <p>CONSTITUENCY CLUSTERS</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🏆</div>
+              <h2>10+</h2>
+              <p>YEARS OF EXPERTISE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR SERVICES (6 Amber-Gold Cards with Black Explore Pills) -->
+      <section class="services-section">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="white-heading">OUR SERVICES</h2>
+            <div class="white-underline"></div>
+          </div>
+          <div class="gold-cards-grid">
+            <div class="gold-service-card">
+              <h3>Political & Electoral Research</h3>
+              <p>Voter pulse tracking, demographic segmentation & strategic constituency insights.</p>
+              <button class="btn-black-pill" onclick="showPage('insight')">Explore</button>
+            </div>
+            <div class="gold-service-card">
+              <h3>Social & Ground Research</h3>
+              <p>Public sentiment mapping, welfare scheme impact & grassroots issue analysis.</p>
+              <button class="btn-black-pill" onclick="showPage('insight')">Explore</button>
+            </div>
+            <div class="gold-service-card">
+              <h3>Data & Tech War Room</h3>
+              <p>Real-time analytics, voter database automation & digital campaign technology.</p>
+              <button class="btn-black-pill" onclick="showPage('solution')">Explore</button>
+            </div>
+            <div class="gold-service-card">
+              <h3>Booth-Level Management</h3>
+              <p>Micro-level booth committee structuring, voter mobilization & polling day execution.</p>
+              <button class="btn-black-pill" onclick="showPage('solution')">Explore</button>
+            </div>
+            <div class="gold-service-card">
+              <h3>Leader Positioning & PR</h3>
+              <p>Executive branding, speech crafting, media management & public narrative design.</p>
+              <button class="btn-black-pill" onclick="showPage('about')">Explore</button>
+            </div>
+            <div class="gold-service-card">
+              <h3>Youth Cadre & Leadership</h3>
+              <p>Structured training programs and grassroots mobilization for emerging leaders.</p>
+              <button class="btn-black-pill" onclick="showPage('team')">Explore</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW WE DO IT? (Clean Responsive Process Architecture) -->
+      <section class="process-section">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="gold-heading">How We Do It?</h2>
+            <p class="subtitle-gray">Our structured five-stage research and campaign execution framework</p>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <h4>Methodology</h4>
+              <p>Scientific sampling & booth-level demographic profiling.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <h4>Research Approach</h4>
+              <p>Field surveys, stakeholder interviews & sentiment triangulation.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <h4>Project Management</h4>
+              <p>Centralized command center & real-time milestone tracking.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <h4>Deep Ground Reach</h4>
+              <p>Hyperlocal field teams covering every panchayat and ward.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-num">05</div>
+              <h4>Digital Execution</h4>
+              <p>Targeted narrative amplification & voter turnout optimization.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT OUR CLIENTS SAY -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p class="subtitle-gray">Hear from leaders and representatives who trust us with data, strategy, and delivery.</p>
+          </div>
+          <div class="testi-grid">
+            <div class="testi-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Client" class="avatar-img" loading="lazy">
+              <h4>Rajiv Malhotra</h4>
+              <span class="role-tag">Constituency Strategist</span>
+              <p>"Their ground intelligence and booth-level data accuracy gave our campaign a decisive edge weeks before polling."</p>
+            </div>
+            <div class="testi-card">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Client" class="avatar-img" loading="lazy">
+              <h4>Ananya Deshmukh</h4>
+              <span class="role-tag">Policy & Public Affairs Lead</span>
+              <p>"Structured, disciplined, and deeply insightful. Raman Das and his team translate complex voter data into clear action."</p>
+            </div>
+            <div class="testi-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Client" class="avatar-img" loading="lazy">
+              <h4>Vikramaditya Singh</h4>
+              <span class="role-tag">Regional Campaign Coordinator</span>
+              <p>"From manifesto framing to digital outreach, their execution across 120+ rural clusters was seamless."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 2. INSIGHT PAGE ==================== -->
+    <div id="page-insight" class="page">
+      <section class="navy-banner">
+        <div class="container navy-split">
+          <div>
+            <h1>Shaping Political Insights,<br><span class="gold-text">Empowering Leadership</span></h1>
+            <p>We combine ground intelligence, data analytics, and field innovation to decode the pulse of the electorate.</p>
+            <button class="btn-gold" onclick="showPage('contact')">Work With Us</button>
+          </div>
+          <div class="navy-img-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Electoral Data Analytics" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="light-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Proven Expertise Across Regions</h2>
+            <p class="subtitle-gray">Field-verified estimates and demographic insights establishing industry benchmarks.</p>
+          </div>
+          <div class="two-col-grid">
+            <div class="white-info-card">
+              <h3>Uttar Pradesh & Bundelkhand</h3>
+              <ul>
+                <li>• Comprehensive booth-level demographic mapping across 120+ rural and urban clusters.</li>
+                <li>• Identified grassroots sentiment shifts driven by welfare delivery and youth employment.</li>
+              </ul>
+            </div>
+            <div class="white-info-card">
+              <h3>Madhya Pradesh</h3>
+              <ul>
+                <li>• Accurate constituency profiling and seat-level alliance impact assessments.</li>
+                <li>• Triangulated ground surveys with real-time digital sentiment tracking.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dark Research Architecture Section -->
+      <section class="dark-arch-section">
+        <div class="container arch-grid">
+          <div class="arch-left">
+            <h2>Our Research Architecture</h2>
+            <p>To represent India's nuanced and evolving voter profile, we deploy a three-module voter pulse mapping architecture:</p>
+          </div>
+          <div class="arch-right">
+            <div class="gold-border-white-card">
+              <span class="dot red"></span> <b>Polling Booth-Level Segmentation</b> – Hyperlocal voter categorization for precision accuracy.
+            </div>
+            <div class="gold-border-white-card">
+              <span class="dot gold"></span> <b>Baseline Ground Surveys</b> – Immersive field studies to gauge lived experience and sentiment.
+            </div>
+            <div class="gold-border-white-card">
+              <span class="dot blue"></span> <b>AI-Driven Sentiment Monitoring</b> – Real-time digital and social signal monitoring for predictive precision.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 3. SOLUTION PAGE ==================== -->
+    <div id="page-solution" class="page dark-page-bg">
+      <div class="container">
+        <div class="section-title">
+          <span class="gold-pill">STRATEGIC SOLUTIONS</span>
+          <h2 class="white-heading">End-to-End Campaign Solutions</h2>
+        </div>
+        <div class="glow-grid">
+          <div class="glow-card">
+            <div class="glow-icon">🤝</div>
+            <h3>Trusted by Clients Nationwide</h3>
+            <p>A partner you can trust — from grassroots villages to major urban constituencies.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+          <div class="glow-card">
+            <div class="glow-icon">📡</div>
+            <h3>Unmatched Ground Intelligence Network</h3>
+            <p>Touching base with India's grassroots to bring insights that truly count.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+          <div class="glow-card">
+            <div class="glow-icon">🧭</div>
+            <h3>Distinctive & Adaptive Research Approach</h3>
+            <p>Flexible, innovative, and designed to meet every campaign's unique challenge.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+          <div class="glow-card">
+            <div class="glow-icon">👥</div>
+            <h3>Expert-Led Research Teams</h3>
+            <p>Seasoned professionals bringing credibility, depth, and actionable insights to every project.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+          <div class="glow-card">
+            <div class="glow-icon">📊</div>
+            <h3>Data-Tech for Smarter Decisions</h3>
+            <p>Cutting-edge technology meets powerful analytics to transform raw data into strategic intelligence.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+          <div class="glow-card">
+            <div class="glow-icon">🏆</div>
+            <h3>Proven Results, Measurable Impact</h3>
+            <p>Turning research into action with results that drive campaigns, policies, and change.</p>
+            <button class="btn-gold-small" onclick="showPage('contact')">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 4. OUR TEAM PAGE ==================== -->
+    <div id="page-team" class="page">
+      <section class="dark-team-banner">
+        <div class="team-bg-overlay"></div>
+        <div class="container relative-z">
+          <span class="gold-text bold-upper">OUR TEAM</span>
+          <h1>Meet Our Leadership Council</h1>
+          <p class="subtitle-light">Behind each insight stands a highly trained team ensuring each step — from data collection to analysis — adheres to the highest level of accuracy and reliability.</p>
+          
+          <div class="team-cards-grid">
+            <div class="team-member-card">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Raman Das" class="member-photo" loading="lazy">
+              <h3>Raman Das</h3>
+              <span class="gold-role">Founder & Chief Strategist</span>
+              <p>Jhansi, India</p>
+            </div>
+            <div class="team-member-card">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Abhimanyu" class="member-photo" loading="lazy">
+              <h3>Abhimanyu</h3>
+              <span class="gold-role">Lead Data Analyst</span>
+              <p>Electoral Intelligence</p>
+            </div>
+            <div class="team-member-card">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Dimple" class="member-photo" loading="lazy">
+              <h3>Dimple</h3>
+              <span class="gold-role">Field Operations Head</span>
+              <p>Survey Coordination</p>
+            </div>
+            <div class="team-member-card">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Shubhankar" class="member-photo" loading="lazy">
+              <h3>Shubhankar</h3>
+              <span class="gold-role">Digital Campaign Lead</span>
+              <p>Media & War Room</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="light-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Why Choose Us</h2>
+          </div>
+          <div class="gold-outline-box">
+            <p>At <b>Reforms & Leadership</b>, we are more than statistics. We blend on-the-ground research, sophisticated analysis, and data-driven insights to provide decision-ready intelligence that enables leaders to feel the heartbeat of people, foresee changes, and win at decision-making.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 5. ABOUT PAGE ==================== -->
+    <div id="page-about" class="page light-page-top">
+      <div class="container">
+        <div class="white-info-card large-pad">
+          <span class="gold-pill">ABOUT RAMAN DAS</span>
+          <h2 style="margin: 14px 0;">The Journey of a <span class="gold-text">Reformer</span></h2>
+          <p class="lead-p">Raman Das is a political strategist and social reformer based in Jhansi, dedicated to transparent governance, youth empowerment, and data-backed grassroots transformation.</p>
+          
+          <h3 style="margin: 25px 0 12px;">Leadership Milestones</h3>
+          <div class="timeline-list">
+            <div class="t-item"><b>2018 —</b> Initiated grassroots student leadership & civic reform advocacy.</div>
+            <div class="t-item"><b>2021 —</b> Founded the Youth Reform Movement across Uttar Pradesh & Madhya Pradesh.</div>
+            <div class="t-item"><b>2024 —</b> Directed 50+ election campaigns and booth-level management across 120+ villages.</div>
+          </div>
+
+          <h3 style="margin: 25px 0 12px;">Core Strategic Pillars</h3>
+          <div class="vision-tags">
+            <span>✔ Transparent Governance</span>
+            <span>✔ Youth Political Leadership</span>
+            <span>✔ Digital Transformation for Rural India</span>
+          </div>
+          <button class="btn-gold" style="margin-top: 25px;" onclick="showPage('contact')">Schedule Consultation →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 6. BLOGS PAGE ==================== -->
+    <div id="page-blogs" class="page">
+      <section class="parliament-banner">
+        <div class="hero-overlay"></div>
+        <div class="container relative-z">
+          <h1>Our Blog Posts</h1>
+          <p>Research publications, electoral pattern analysis, and field notes.</p>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <div class="container">
+          <div class="three-col-grid">
+            <div class="blog-card">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Election Patterns" class="blog-img" loading="lazy">
+              <div class="blog-body">
+                <h3>Demographic Facts and Election Patterns in India</h3>
+                <p>In India, elections are not just a political act — they are a mirror to society, identity, and transformation.</p>
+                <button class="btn-gold-small" onclick="showPage('insight')">Read More</button>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="AI in Political Research" class="blog-img" loading="lazy">
+              <div class="blog-body">
+                <h3>Data in Political Research: Myths vs Reality</h3>
+                <p>Can analytics really decode voter behavior? Separating empirical ground reality from assumptions.</p>
+                <button class="btn-gold-small" onclick="showPage('insight')">Read More</button>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=600&q=80" alt="Election Campaign" class="blog-img" loading="lazy">
+              <div class="blog-body">
+                <h3>What Makes a Great Election Campaign?</h3>
+                <p>From message clarity to booth-level data — breaking down the core components of a winning political strategy.</p>
+                <button class="btn-gold-small" onclick="showPage('solution')">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-contact" class="page dark-page-bg">
+      <div class="container">
+        <div class="contact-split">
+          <div class="contact-left">
+            <h1 class="gold-text">Get in Touch</h1>
+            <p>Select your engagement category and schedule a confidential strategy consultation with our research team.</p>
+            
+            <div class="category-pills" id="catPills">
+              <button type="button" class="cat-btn active-cat" onclick="selectCategory(this, 'Individual')">Individual</button>
+              <button type="button" class="cat-btn" onclick="selectCategory(this, 'Political Party')">Political Party</button>
+              <button type="button" class="cat-btn" onclick="selectCategory(this, 'Company / Organization')">Company</button>
+            </div>
+
+            <div class="direct-info">
+              <p>📞 <b>Direct Line:</b> +91 9309207324</p>
+              <p>✉️ <b>Official Email:</b> ramandas.vdb2135@gmail.com</p>
+              <p>📍 <b>Headquarters:</b> Jhansi, Uttar Pradesh, India</p>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form id="consultForm" action="https://formsubmit.co/ramandas.vdb2135@gmail.com" method="POST" class="dark-form-box">
+              <input type="hidden" name="_subject" value="New Consultation Inquiry — Raman Das Political Consulting">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="Client_Category" id="selectedCategory" value="Individual">
+
+              <label for="fName">Full Name *</label>
+              <input type="text" name="Name" id="fName" placeholder="Enter your full name" required>
+
+              <label for="fPhone">Phone Number *</label>
+              <input type="tel" name="Phone" id="fPhone" placeholder="Enter 10-digit mobile number" required>
+
+              <label for="fEmail">Email Address *</label>
+              <input type="email" name="Email" id="fEmail" placeholder="Enter your official email address" required>
+
+              <label for="fMsg">Constituency / Inquiry Details</label>
+              <textarea name="Message" id="fMsg" rows="3" placeholder="Specify your state, constituency, or advisory requirements"></textarea>
+
+              <p id="formError" class="error-text"></p>
+              <button type="submit" class="btn-gold" style="width: 100%; margin-top: 12px;">Submit Consultation Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== DEEP INDIGO/PURPLE FOOTER WITH OVERLAY ==================== -->
+  <footer class="bdr-footer">
+    <div class="footer-overlay"></div>
+    <div class="container footer-grid relative-z">
+      <div class="footer-col">
+        <div class="footer-logo"><b>REFORM</b> & LEADERSHIP</div>
+        <p>Your trusted partner in political surveys, demographic research, and outreach strategies. Delivering insight-driven solutions that matter.</p>
+        <div class="newsletter-box">
+          <h4>Newsletter</h4>
+          <p>Subscribe to stay updated with the latest political trends and research insights.</p>
+          <form class="news-form" onsubmit="subscribeNews(event)">
+            <input type="email" id="newsEmail" placeholder="Enter your email" required>
+            <button type="submit">➤</button>
+          </form>
+          <small id="newsMsg" style="color: #F5A623; display:block; margin-top:5px;"></small>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">HOME</a></li>
+          <li><a href="#" onclick="showPage('insight')">INSIGHT</a></li>
+          <li><a href="#" onclick="showPage('solution')">SOLUTION</a></li>
+          <li><a href="#" onclick="showPage('team')">OUR TEAM</a></li>
+          <li><a href="#" onclick="showPage('about')">ABOUT</a></li>
+          <li><a href="#" onclick="showPage('blogs')">BLOGS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📞 +91 9309207324</p>
+        <p>✉️ ramandas.vdb2135@gmail.com</p>
+        <p>📍 Jhansi, Uttar Pradesh, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom relative-z">
+      © 2026 Raman Das — Reforms & Leadership. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919309207324?text=Hello%20Raman%20Das,%20I%20would%20like%20to%20schedule%20a%20political%20strategy%20consultation." target="_blank" class="whatsapp-float" aria-label="WhatsApp">💬</a>
+
+  <script src="reform.js"></script>
+</body>
+</html>
